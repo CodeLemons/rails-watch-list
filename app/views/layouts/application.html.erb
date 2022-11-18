@@ -11,12 +11,14 @@
   </head>
 
   <body>
-    <div class="navbar-movie">
-      <ul class="nav-ul">
-        <li><%= link_to "My Lists", lists_path %></li>
-        <li><%= link_to "New List", new_list_path %></li>
-      </ul>
+    <div class="container">
+      <div class="navbar-movie">
+        <ul class="nav-ul">
+          <li><%= link_to "My Lists", lists_path %></li>
+          <li><%= link_to "New List", new_list_path %></li>
+        </ul>
+      </div>
+      <%= yield %>
     </div>
-    <%= yield %>
   </body>
 </html>
